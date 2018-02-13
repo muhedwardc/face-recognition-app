@@ -2,10 +2,12 @@ import React from 'react';
 
 import './Navigation.css';
 
-const Navigation = () => {
+const Navigation = (props) => {
     return (
         <nav className='nav'>
-            <a className='f3 link dim black underline pa3 pointer'>Sign Out</a>
+            <a 
+                onClick={() => props.onRouteChange('signin')}
+                className='f3 link dim black underline pa3 pointer'>Sign Out</a>
         </nav>
     )
 }   
